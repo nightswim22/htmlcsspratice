@@ -1,0 +1,135 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*-------------------------------------------------*/
+.wrap{
+	margin: 0 auto;
+	width: 1024px;
+}
+
+.header{
+	margin-bottom: 30px;
+}
+.header .bar {
+	display: flex;
+	justify-content:space-between ;
+}
+.header .bar .meau{
+	display: flex;
+	justify-content:space-between ;
+
+
+}
+
+
+.header .bar .meau a{
+	  display: block;
+      text-decoration: none;
+	  width: 80px;
+      height: 30px;
+	  text-align: center;
+	  padding-top: 15px;
+	  color:rgb(67, 218, 180);
+	  font-weight: bold;	
+}
+.header .bar .meau a:hover{
+
+	color:rgb(3, 151, 114);
+    
+		
+}
+
+
+
+
+
+.content{
+	margin-bottom: 20px;
+}
+
+.footer{
+	background-color: gray;
+	color: #fff;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.content .course{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	
+}
+.content .course .item{
+	width: 300px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.course .item h2{
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+}
+/**.course .item img{
+	width: 250px;
+}**/
+.course .item p{
+	padding: 10px 30px;
+	line-height: 20px;
+}
+.course .item ul{
+	list-style-type: disc;
+	margin-left: 40px;
+	line-height: 20px;
+	
+
+}
+
+
+
+
+

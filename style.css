@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.social {
+  background-color: rgb(246, 246, 246);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: bold;
+}
+.social a {
+  text-decoration: none;
+  margin: 0.3rem 0rem;
+  padding-right: 0.5rem;
+  display: flex;
+}
+.social a img {
+  display: block;
+  padding: 0rem 0.3rem;
+}
+.social .fb {
+  color: rgb(68, 96, 160);
+  border-right: 2px solid rgb(196, 196, 196);
+}
+.social .fb:hover {
+  color: rgb(10, 84, 231);
+}
+.social .twi {
+  color: rgb(0, 170, 236);
+}
+.social .twi:hover {
+  color: rgb(1, 100, 139);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+nav ul li {
+  padding: 0.95rem 0rem;
+  /* a:hover {
+    border-bottom: 4px solid rgb(1, 203, 155);
+    transition: 0.2s;
+  }*/
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgb(1, 203, 155);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.95rem 1.5rem;
+  position: relative;
+}
+nav ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 3px;
+  width: 0;
+  background-color: rgb(1, 203, 155);
+  transition: 0.3s;
+}
+nav ul li a:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.backgroundpicture .banner {
+  background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png);
+  width: 100%;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.backgroundpicture .banner h1 {
+  position: relative;
+  color: white;
+  font-size: 3rem;
+  padding: 3rem 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-height: 500px) {
+  .backgroundpicture .banner h1 {
+    font-size: 2rem;
+    padding: 0;
+  }
+}
+.websitelearning {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.websitelearning .html5,
+.websitelearning .rwd,
+.websitelearning .jquery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 350px;
+  margin: 2.5rem 2rem;
+  box-shadow: rgba(50, 50, 93, 0.5) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.websitelearning .html5 p,
+.websitelearning .rwd p,
+.websitelearning .jquery p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+.websitelearning .jquery p {
+  padding-right: 10rem;
+}
+.websitelearning .jquery ul {
+  padding-bottom: 1rem;
+}
+.websitelearning .jquery ul li {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.websitelearning .html5:hover,
+.websitelearning .rwd:hover,
+.websitelearning .jquery:hover {
+  transform: scale(1.05);
+  transition: 0.8s;
+}
+
+.tablecontent h2 {
+  font-size: 1.8rem;
+  margin: 2rem;
+  text-align: center;
+}
+.tablecontent .course {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-bottom: 5rem;
+  position: relative;
+}
+.tablecontent .course th,
+.tablecontent .course td {
+  border-bottom: 1px solid rgb(201, 201, 201);
+  border-top: 1px solid rgb(201, 201, 201);
+  padding: 1rem 5rem;
+}
+.tablecontent .course th {
+  background-color: rgb(230, 252, 239);
+}
+.tablecontent .course .better {
+  color: rgb(4, 177, 4);
+}
+@media screen and (max-width: 800px) {
+  .tablecontent .course th,
+.tablecontent .course td {
+    padding: 1rem 0.8rem;
+    font-size: 1rem;
+  }
+}
+.tablecontent .course tr:hover {
+  background-color: rgb(247, 247, 247);
+}
+
+.form {
+  background: linear-gradient(180deg, rgb(0, 103, 76), rgb(0, 152, 114));
+}
+.form h3 {
+  color: white;
+  font-size: 1.8rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+.form .info {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+.form .info .feedback {
+  resize: none;
+  margin: 0rem 1rem 0.8rem 1rem;
+  border-radius: 0.5rem;
+}
+.form .info .feedback:focus {
+  color: green;
+  font-weight: bold;
+}
+.form .info .personalinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  font-size: 1.2rem;
+}
+.form .info .personalinfo .inputinfo {
+  margin-bottom: 1.4rem;
+  border-radius: 0.2rem;
+  height: 1.5rem;
+}
+.form .info .personalinfo .inputinfo:focus {
+  color: green;
+  font-weight: bold;
+}
+.form .info .personalinfo .submitinfo {
+  margin-left: 15rem;
+  padding: 0.5rem 2rem;
+  background-color: rgb(0, 204, 153);
+  border: none;
+  position: relative;
+  color: white;
+  cursor: pointer;
+}
+.form .info .personalinfo .submitinfo:hover {
+  background-color: rgb(8, 78, 61);
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 3rem 2rem;
+}
+.foot .contact li {
+  list-style-type: none;
+}
+.foot .contact li a {
+  text-decoration: none;
+  color: rgb(223, 54, 125);
+  position: relative;
+}
+.foot .contact li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 3px;
+  width: 0;
+  background-color: rgb(182, 103, 136);
+  transition: 0.3s;
+}
+.foot .contact li a:hover::before {
+  width: 100%;
+  left: 0;
+}
+.foot .contact li a:hover {
+  color: rgb(182, 103, 136);
+}/*# sourceMappingURL=style.css.map */
