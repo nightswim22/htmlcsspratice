@@ -359,6 +359,8 @@ a {
     display: flex;
     list-style-type: none;
     align-items: center;
+    flex-wrap: wrap;
+
     li {
       padding: 0.95rem 0rem;
       a {
@@ -382,6 +384,28 @@ a {
       a:hover::before {
         width: 100%;
         left: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .webnav ul {
+    justify-content: space-around;
+    flex: 1 1 400px;
+    li {
+      padding: 0rem 0rem;
+      a {
+        display: inline-block;
+      }
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .webnav ul {
+    li {
+      a {
+        padding: 0.95rem;
       }
     }
   }
