@@ -576,16 +576,10 @@ a {
   .form .info .personalinfo {
     width: 60%;
   }
-  .form .info .personalinfo .inputinfo {
-    width: 100%;
-  }
 }
 @media screen and (max-width: 815px) and (max-width: 500px) {
   .form .info .personalinfo {
     width: 80%;
-  }
-  .form .info .personalinfo .inputinfo {
-    width: 100%;
   }
 }
 

@@ -589,16 +589,10 @@ a {
     @media screen and(max-width:815px) {
       .personalinfo {
         width: 60%;
-        .inputinfo {
-          width: 100%;
-        }
       }
       @media screen and(max-width:500px) {
         .personalinfo {
           width: 80%;
-          .inputinfo {
-            width: 100%;
-          }
         }
       }
     }
