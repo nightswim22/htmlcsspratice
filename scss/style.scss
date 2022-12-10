@@ -360,31 +360,30 @@ a {
     list-style-type: none;
     align-items: center;
     flex-wrap: wrap;
-
-    li {
-      padding: 0.95rem 0rem;
-      a {
-        text-decoration: none;
-        color: rgb(1, 203, 155);
-        font-weight: bold;
-        font-size: 1.2rem;
-        padding: 0.95rem 1.5rem;
-        position: relative;
-      }
-      a::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        height: 3px;
-        width: 0;
-        background-color: rgb(1, 203, 155);
-        transition: 0.3s;
-      }
-      a:hover::before {
-        width: 100%;
-        left: 0;
-      }
+  }
+  li {
+    padding: 0.95rem 0rem;
+    a {
+      text-decoration: none;
+      color: rgb(1, 203, 155);
+      font-weight: bold;
+      font-size: 1.2rem;
+      padding: 0.95rem 1.5rem;
+      position: relative;
+    }
+    a::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 3px;
+      width: 0;
+      background-color: rgb(1, 203, 155);
+      transition: 0.3s;
+    }
+    a:hover::before {
+      width: 100%;
+      left: 0;
     }
   }
 }
@@ -393,22 +392,21 @@ a {
   .webnav ul {
     justify-content: space-around;
     flex: 1 1 400px;
-    li {
-      padding: 0rem 0rem;
-      a {
-        display: inline-block;
-      }
+  }
+  li {
+    padding: 0rem 0rem;
+    a {
+      display: inline-block;
     }
   }
 }
 @media screen and (max-width: 320px) {
-  .webnav ul {
-    li {
+  .webnav li {
       a {
         padding: 0.95rem;
       }
-    }
   }
+  
 }
 
 /*****橫福******/
@@ -468,12 +466,13 @@ a {
   .jquery {
     ul {
       padding-bottom: 1rem;
-      li {
-        font-size: 1.2rem;
-        font-weight: bold;
-        list-style: disc;
-        margin-left: 2rem;
-      }
+     
+    }
+    li {
+      font-size: 1.2rem;
+      font-weight: bold;
+      list-style: disc;
+      margin-left: 2rem;
     }
   }
   .course-list:hover {
@@ -493,40 +492,39 @@ a {
     overflow-x: auto;
     white-space: nowrap;
     margin: 4rem 1rem;
-    .course {
-      font-size: 1.2rem;
-      margin: 0 auto;
+  }
+  .course {
+    font-size: 1.2rem;
+    margin: 0 auto;
+    th,
+    td {
+      border-bottom: 1px solid rgb(201, 201, 201);
+      border-top: 1px solid rgb(201, 201, 201);
+      padding: 1rem 5rem;
+      min-width: 100%;
+    }
+    th {
+      background-color: rgb(230, 252, 239);
+    }
+    tr:hover {
+      background-color: rgb(247, 247, 247);
+    }
+    .better {
+      color: rgb(4, 177, 4);
+    }
+    @media screen and(max-width:800px) {
       th,
       td {
-        border-bottom: 1px solid rgb(201, 201, 201);
-        border-top: 1px solid rgb(201, 201, 201);
-        padding: 1rem 5rem;
-        min-width: 100%;
+        padding: 1rem 3rem;
+        font-size: 1rem;
       }
-      th {
-        background-color: rgb(230, 252, 239);
-      }
-
-      .better {
-        color: rgb(4, 177, 4);
-      }
-      @media screen and(max-width:800px) {
+      @media screen and(max-width:450px) {
         th,
         td {
-          padding: 1rem 3rem;
-          font-size: 1rem;
-        }
-        @media screen and(max-width:450px) {
-          th,
-          td {
-            padding: 1rem 0.8rem;
-          }
-        }
-
-        tr:hover {
-          background-color: rgb(247, 247, 247);
+          padding: 1rem 0.8rem;
         }
       }
+
     }
   }
 }
@@ -562,29 +560,30 @@ a {
       color: white;
       font-size: 1.2rem;
       width: 40%;
-      .inputinfo {
-        margin-bottom: 1.4rem;
-        border-radius: 0.2rem;
-        width: 100%;
-      }
+    }
 
-      .inputinfo:focus {
-        color: green;
-        font-weight: bold;
-      }
+    .inputinfo {
+      margin-bottom: 1.4rem;
+      border-radius: 0.2rem;
+      width: 100%;
+    }
 
-      .submitinfo {
-        margin-left: auto;
-        padding: 0.5rem 2rem;
-        background-color: rgb(0, 204, 153);
-        border: none;
-        position: relative;
-        color: white;
-        cursor: pointer;
-      }
-      .submitinfo:hover {
-        background-color: rgb(8, 78, 61);
-      }
+    .inputinfo:focus {
+      color: green;
+      font-weight: bold;
+    }
+
+    .submitinfo {
+      margin-left: auto;
+      padding: 0.5rem 2rem;
+      background-color: rgb(0, 204, 153);
+      border: none;
+      position: relative;
+      color: white;
+      cursor: pointer;
+    }
+    .submitinfo:hover {
+      background-color: rgb(8, 78, 61);
     }
     @media screen and(max-width:815px) {
       .personalinfo {
@@ -611,28 +610,28 @@ a {
       list-style-type: none;
       padding: 0.4rem;
 
-      a {
-        text-decoration: none;
-        color: rgb(223, 54, 125);
-        position: relative;
-      }
-      a::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        height: 3px;
-        width: 0;
-        background-color: rgb(182, 103, 136);
-        transition: 0.3s;
-      }
-      a:hover::before {
-        width: 100%;
-        left: 0;
-      }
-      a:hover {
-        color: rgb(182, 103, 136);
-      }
+    }
+    a {
+      text-decoration: none;
+      color: rgb(223, 54, 125);
+      position: relative;
+    }
+    a::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 3px;
+      width: 0;
+      background-color: rgb(182, 103, 136);
+      transition: 0.3s;
+    }
+    a:hover::before {
+      width: 100%;
+      left: 0;
+    }
+    a:hover {
+      color: rgb(182, 103, 136);
     }
   }
 }
